@@ -1,0 +1,27 @@
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  a{
+    color: wheat;
+    &:hover{
+      color: teal;
+      transition: color 500ms;
+    }
+  }
+  img{
+    flex: 1;
+    height: 25px !important;
+  }
+  ul{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    li{
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+}

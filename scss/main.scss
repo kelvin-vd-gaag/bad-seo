@@ -1,2 +1,80 @@
 @import "variables";
 @import "typography";
+
+@import "components/nav";
+@import "components/buttons";
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background: url("../assets/images/general/header.jpg");
+  background-size: 100%;
+}
+
+main{
+  padding: 4em;
+  h2{
+    text-align: center;
+  }
+  display: flex;
+  flex-direction: column;
+  .services {
+    display: flex;
+    .service {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 1em;
+    }
+  }
+}
+
+.our-clients{
+  h2{
+    text-align: center;
+  }
+}
+
+.clients{
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.client{
+  min-width: 200px;
+  min-height: 300px;
+  max-height: 600px;
+  max-width: 400px;
+}
+
+.client-one{
+  background: url("../assets/images/clients/anp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.client-two{
+  background: url("../assets/images/clients/nu.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.client-three{
+  background: url("../assets/images/clients/tweakers.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.information{
+  max-width: 1200px;
+  margin: 0 auto;
+}
